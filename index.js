@@ -27,7 +27,7 @@ function markDown() {
   console.log(seconds);
 
   // Update the count down date)
-  daysElement.innerText = formatTime(days);
+  daysElement.innerText = days;
   hoursElement.innerText = formatTime(hours);
   minutesElement.innerText = formatTime(minutes);
   secondsElement.innerText = formatTime(seconds);
