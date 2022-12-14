@@ -34,7 +34,7 @@ function markDown() {
 }
 
 function formatTime(time) {
-  return time < 10 ? `0{time}` : time;
+  return time < 10 ? `0${time}` : time;
 }
 
 setInterval(markDown, 1000);
