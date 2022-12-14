@@ -27,10 +27,14 @@ function markDown() {
   console.log(seconds);
 
   // Update the count down date)
-  daysElement.innerText = days;
-  hoursElement.innerText = hours;
-  minutesElement.innerText = minutes;
-  secondsElement.innerText = seconds;
+  daysElement.innerText = formatTime(days);
+  hoursElement.innerText = formatTime(hours);
+  minutesElement.innerText = formatTime(minutes);
+  secondsElement.innerText = formatTime(seconds);
+}
+
+function formatTime(time) {
+  return time < 10 ? `0{time}` : time;
 }
 
 setInterval(markDown, 1000);
